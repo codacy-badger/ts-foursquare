@@ -1,0 +1,26 @@
+{
+  "name": "ts-foursquare",
+  "version": "0.0.0",
+  "description": "A simple library for Foursquare API",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnaud-zg/js-foursquare.git"
+  },
+  "keywords": [
+    "ts-foursquare",
+    "js-foursquare",
+    "foursquare",
+    "swarm",
+    "4sq"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arnaud-zg/js-foursquare/issues"
+  },
+  "homepage": "https://github.com/arnaud-zg/js-foursquare#readme"
+}
