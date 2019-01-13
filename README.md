@@ -1,1 +1,1 @@
-# js-foursquare
+# ts-foursquare
