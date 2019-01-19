@@ -3,8 +3,15 @@
   "version": "0.0.0",
   "description": "A simple library for Foursquare API",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jestconfig.json"
   },
   "repository": {
     "type": "git",
@@ -17,10 +24,22 @@
     "swarm",
     "4sq"
   ],
-  "author": "",
+  "author": "Arnaud Zheng <arnaud-zg@users.noreply.github.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/arnaud-zg/js-foursquare/issues"
   },
-  "homepage": "https://github.com/arnaud-zg/js-foursquare#readme"
+  "homepage": "https://github.com/arnaud-zg/js-foursquare#readme",
+  "dependencies": {
+    "rxjs": "6.3.3"
+  },
+  "devDependencies": {
+    "@types/jest": "23.3.13",
+    "jest": "23.6.0",
+    "prettier": "1.15.3",
+    "ts-jest": "23.10.5",
+    "tslint": "5.12.1",
+    "tslint-config-prettier": "1.17.0",
+    "typescript": "3.2.4"
+  }
 }
