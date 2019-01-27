@@ -1,0 +1,23 @@
+language: node_js
+
+node_js:
+  - 8
+  - 6
+
+before_script:
+  - echo "Start CI"
+
+install:
+  - npm install
+
+script:
+  - yarn run format
+  - yarn run build
+  - yarn run test:coverage
+
+deploy:
+  provider: npm
+  email: $NPM_AUTHOR_EMAIL
+  api_key: $NPM_TOKEN
+  on:
+    tags: true

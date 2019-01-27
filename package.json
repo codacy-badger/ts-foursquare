@@ -11,6 +11,7 @@
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
+    "test:coverage": "jest --config jestconfig.json --coverage && cat ./coverage/lcov.info | codacy-coverage",
     "test": "jest --config jestconfig.json"
   },
   "repository": {
@@ -35,8 +36,10 @@
   },
   "devDependencies": {
     "@types/jest": "23.3.13",
+    "codacy-coverage": "3.4.0",
     "jest": "23.6.0",
     "prettier": "1.15.3",
+    "standard-version": "4.4.0",
     "ts-jest": "23.10.5",
     "tslint": "5.12.1",
     "tslint-config-prettier": "1.17.0",
