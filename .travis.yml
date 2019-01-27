@@ -13,7 +13,7 @@ install:
 script:
   - yarn run format
   - yarn run build
-  - yarn run test:coverage
+  - yarn run test:coverage -- --username $CODACY_USERNAME --projectName $CODACY_PROJECT_NAME
 
 deploy:
   provider: npm
